@@ -1,0 +1,31 @@
+
+/* Heading */
+#heading{
+    font-size: 42px;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+}
+#a{
+    font-size: 65px;
+}
+
+
+/*Full body*/
+#women_shopping_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 7px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#women_shopping_container img{
+    width: 100%;
+}
+#women_shopping_container div:hover{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    
+}
+#women_shopping_container div{
+    padding: 15px;
+}

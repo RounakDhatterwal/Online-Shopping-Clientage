@@ -1,0 +1,278 @@
+#footer1,#footer2{
+    display: flex;
+    line-height: 10px;
+
+}
+#footer1,#footer3{
+    justify-content: space-evenly;
+    width: 50%;
+}
+#footer3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    padding-top: 8%;
+    /* text-align:right; */
+}
+#footer3>div{
+    text-align: center;
+}
+#footer3>div>h4,#footer3>div>p{
+    text-align: center;
+}
+#footer3 p{
+    color: rgb(101, 96, 96);
+}
+#footer3 button{
+background-color: black;
+color: white;
+font-weight: 600;
+padding: 10px 15px;
+}
+#footer3 input{
+    padding: 10px 50px;
+    font-size: 14px;
+    border-color: rgb(246, 241, 241);
+}
+#footer2{
+    justify-content: space-between;
+}
+#footer>div:nth-child(2){
+    width: 80%;
+    padding: 40px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+#footer h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+#footer{
+    background-color: rgb(234, 243, 249);
+}
+
+#b>p{
+    justify-content:center;
+}
+
+/* Navigation Bar */
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+}
+#nav>div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+}
+#nav>div:nth-child(1){
+   
+    display: flex;
+    justify-content: space-between;
+    text-align-last: center;
+}
+
+
+
+
+
+
+#new_arrivals{        
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    margin: auto;
+}
+#new_arrivals>div:nth-child(1){
+    font-size: 32px;
+}
+.border{
+    border: 1px solid black;
+    padding: 10px 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+
+
+
+/* More Stories */
+
+#more_stories{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 7px;
+    width: 80%;
+    margin: auto;
+}
+#more_stories img{
+    width: 100%;
+}
+#more_stories p{
+    font-size: 22px;
+    font-style:inherit ;
+    font-weight: 540;
+}
+#more_stories div{
+    padding: 10px;
+}
+#more_stories h4{
+    font-family:Arial, Helvetica, sans-serif    ;
+}
+
+
+
+
+
+/* Creative_team */
+
+#creative_team{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 80%;
+    margin: auto;
+    gap: 13px;
+}
+#creative_team>div{
+    padding: 7px;
+}
+#creative_team img{
+    width: 100%;
+}
+.creativep1{
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(41, 40, 40);
+}
+.creativep2{
+    font-size: 33px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.creativep3{
+    font-size: 17px;
+    text-decoration-line: underline;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#creative_community>div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding-left: 20px;
+}
+#creative_community>div:nth-child(1)>div:nth-child(2){
+    align-items: flex-end;
+}
+#creative_community>div:nth-child(1) img{
+    width: 235px;
+}
+#creative_community>div:nth-child(1) p{
+    font-size: 15px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+/* You will Also Love */
+
+#you_also_love{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+}
+#you_also_love img{
+    width: 100%;
+}
+
+
+
+
+
+/* Slide Show */
+
+#slide_show{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 60px;
+    grid-auto-rows: 300px;
+}
+#slide_show img{
+    width: 100%;
+}
+
+
+
+
+
+/* More_you_need_to_see */
+
+#More_you_need_to_see{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 11px;
+    width: 97%;
+    margin: auto;
+}
+#More_you_need_to_see img{
+    width: 100%;
+}
+#More_you_need_to_see p{
+    font-size: 12px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+/* Top contianer */
+
+#background_image{
+    background-image:url('https://www.jcrew.com/brand_creative/homepage2022/15-Dec4/2022dec2_1213_hp_w_img0.jpg');
+    width: 100%;
+    height: 800px;
+}
+#background_image p{
+    text-align: center;
+    font-size: 60px;
+}
+#background_image img{
+    width: 100%;
+    
+}
+
+
+
+
+
+
+/* Second Container */
+
+#background_image1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 80%;
+    margin: auto;
+    row-gap: 0px;
+}
+#background_image1 img{
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+
+
+#last_second{
+    display: flex;
+    width: 40%;
+    margin: auto;
+    justify-content:space-evenly;
+}
