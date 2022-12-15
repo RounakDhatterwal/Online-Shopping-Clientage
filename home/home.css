@@ -52,7 +52,7 @@ a:hover{
     font-size: 14px;
 }
 #footer{
-    background-color: rgb(234, 243, 249);
+    background-color: rgb(245, 244, 243);
 }
 
 #b>p{
@@ -63,17 +63,15 @@ a:hover{
 
 #nav{
     display: flex;
-    justify-content: space-between;
 }
 #nav>div:nth-child(2){
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
 #nav>div:nth-child(1){
-   
-    display: flex;
-    justify-content: space-between;
-    text-align-last: center;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    width: 60%;
 }
 
 
@@ -122,6 +120,9 @@ a:hover{
 }
 #more_stories h4{
     font-family:Arial, Helvetica, sans-serif    ;
+}
+#more_stories a{
+    text-decoration: none;
 }
 
 
@@ -175,6 +176,13 @@ a:hover{
     font-size: 15px;
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
+}
+#creative_community a{
+    text-decoration: none;
+}
+#creative{
+    background-color: rgb(245, 244, 243);
+    padding-top: 50px;
 }
 
 

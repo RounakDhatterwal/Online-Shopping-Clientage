@@ -1,0 +1,36 @@
+#first_div{
+    background-color: rgb(222, 6, 6);
+    color: white;
+    height: 25px;
+    text-align: center;
+    padding-top:6px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+#second_div{
+    display: flex;
+    width: 45%;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    padding: 10px;
+}
+#shopping_bag,#saved_items{
+    width: 45%;
+}
+#bag,#saved{
+    padding-left: 20%;
+}
+#second_div>p:first-child{
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#second_div>p:nth-child(2){
+    color:gray;
+}
+#second_div>p:nth-child(2) span{
+    color: rgb(96, 161, 235);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+#second_div, #saved_items, #shopping_bag{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
