@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping</title>
+    <link rel = "icon" href = "https://live.staticflickr.com/65535/52563473413_acddb191f5_w.jpg" 
+        type = "image/x-icon">
     <link rel="stylesheet" href="shopping.css">
 </head>
 <body>
@@ -14,23 +16,25 @@
     </div>
 
 
-    <!-- Shopping List -->
+    <!-- Shopping List Nav-->
+    <div id='second_nav'>
+    <div>
+        <button id="filter">Filters</button>
+        <button id="featured">Featured</button>
+    </div>
+    <div>
+        <div id="Current_page">1 &#160&#160&#160&#160&#160🔻</div>
+        <span id="total_page">Of 2</span>
+        <div id="total_count">View All<span></span></div>
+    </div>
+    </div>
 
-    <div id="main_conainer">
-        <div>
-            <button id="filter">Filters</button>
-            <button>Featured</button>
-        </div>
-        <div>
-            <div id="Current_page"></div>
-            <span id="total_page"></span>
-            <div id="total_count">View<span></span></div>
-        </div>
+
+    <!-- Main Items Div -->
+    <div id="main">
         <div id="main_container">
-        <div>
-            <div>
-                <div>
-                <div id="cat"><h3>Category <span>+</span></h3></div></div>
+            <div id="a1"><h3>Category</h3></div>
+            <div id="cat">
                 <p><label class="container">
                     <input type="checkbox">
                     <span class="checkmark"></span>sweater
@@ -60,20 +64,227 @@
                     <span class="checkmark"></span>pajama
                 </label></p>
             </div>
-            <div>
-                <div><h3>Size<span>-</span></h3></div>
-                
+            <div id="a2"><h3>Size</h3></div>
+            <div id="cat1">
+                <div>
+                    <p><input value="Classic"></p>
+                    <p><input value="tall"></p>
+                    <p><input value="00"></p>
+                    <p><input value="2"></p>
+                    <p><input value="5"></p>
+                    <p><input value="7"></p>
+                    <p><input value="10"></p>
+                    <p><input value="14"></p>
+                    <p><input value="18"></p>
+                    <p><input value="22"></p>
+                </div>
+                <div>
+                    <p><input value="Petite"></p>
+                    <p><input value="0"></p>
+                    <p><input value="4"></p>
+                    <p><input value="6"></p>
+                    <p><input value="8"></p>
+                    <p><input value="12"></p>
+                    <p><input value="16"></p>
+                    <p><input value="20"></p>
+                    <p><input value="24"></p>
+                </div>
             </div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div id="a3"><h3>Color</h3></div>
+            <div id="cat2">
+                <div>
+                    <p>Black (40)</p>
+                    <p style="color:blue;">Blue (19)</p>
+                    <p style="color:brown;">Brown (23)</p>
+                    <p style="color:gold ;">Gold (7)</p>
+                    <p style="color:green ;">Green (23)</p>
+                    <p style="color:grey ;">Grey (19)</p>
+                    <p style="color:aquamarine ;">Natural (42)</p>
+                    <p style="color:navy ;">Navy (3)</p>
+                </div>
+                <div>
+                    <p style="color:chartreuse ;">Other (69)</p>
+                    <p style="color:pink ;">Pink (28)</p>
+                    <p style="color: purple;">Purple (1)</p>
+                    <p style="color: yellowgreen;">Rainbow (3)</p>
+                    <p style="color: red;">Red (28)</p>
+                    <p style="color: silver;">Silver (4)</p>
+                    <p style="color:thistle ;">White (16)</p>
+                    <p style="color: yellow;">Yellow (31)</p>
+                </div>
+            </div>
+            <div id="a4"><h3>Pattern</h3></div>
+            <div id="cat3">
+                <p><label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>Animal Print
+                </label></p>
+                <p><label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>Floral
+                </label></p>
+                <p><label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>Other Prints
+                </label></p>
+                <p><label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>Strips
+                </label>   </p> 
+                <p><label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>Fair Isle
+                </label></p>
+                <p><label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>Plaid
+                </label></p>
+                <p><label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>Graphic
+                </label></p>
+            </div>
+            <div id="a5"><h3>Discount</h3></div>
+            <div id="cat4">
+                <p><label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    60% - 70% Off (83)
+                </label></p>
+                <p><label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    40% - 60% Off (40)
+                </label></p>
+                <p><label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>Less Than 40% Off(112)
+                </label></p>
+
+            </div>
+            <div id="a6"><h3>Trending</h3></div>
+            <div id="cat5">
+                <p><label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>Best Seller
+                </label></p>
+                <p><label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>Top Rated
+                </label></p>
+                <p><label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>New - Last 4 Weeks
+                </label></p>
+                <p><label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>Monogrammable
+                </label></p> 
+           
+            </div>
         </div>
-        
+        <div id="shopping_container">
+
         </div>
     </div>
-    <div id="shopping_container"></div>
 
+
+    <!-- Last Image Div -->
+
+    <div id="last_image_div">
+        <a href="https://www.jcrew.com/in/plp/girls/features/gift-guide"><div>
+            <img src="https://www.jcrew.com/brand_creative/2022/202214-Dec2/flyout/2022dec2_1213_flyouts_w_img0.jpg">
+            <h4 style="font-family: Arial, Helvetica, sans-serif;">The Ski Shop</h4>
+        </div></a>
+        <a href="https://www.jcrew.com/in/plp/boys/features/new-arrivals"><div>
+            <img src="https://www.jcrew.com/brand_creative/2022/202214-Dec2/flyout/2022dec2_1213_flyouts_m_img0.jpg">
+            <h4 style="font-family: Arial, Helvetica, sans-serif;">Peak sweater season</h4>
+        </div></a>
+        <a href="https://www.jcrew.com/in/plp/girls/categories/clothing/pajamas-and-underwear"><div>
+            <img src="https://www.jcrew.com/brand_creative/2022/202213-Gift/flyout/2022gifcyb_1122_flyouts_cc_img1.jpg">
+            <h4 style="font-family: Arial, Helvetica, sans-serif;">mix-and-match pJ's</h4>
+        </div></a>
+        <a href="https://www.jcrew.com/in/plp/boys/features/new-arrivals"><div>
+            <img src="https://www.jcrew.com/brand_creative/2022/202213-Gift/flyout/2022gifcyb_1122_flyouts_cc_img3.jpg">
+            <h4 style="font-family: Arial, Helvetica, sans-serif;">the gift guide</h4>
+        </div></a>
+    </div>
+<br>
+
+
+
+<!-- Instagram Handle -->
+
+<div id="last_second">
+    <div>
+       <p>👻 &#160&#160 <a href="https://twitter.com/jcrew_help">@clientage_help</a></p>
+    </div>
+    <div>
+        <p>📞&#160&#160 <a href="tel:1 434 385 5775">1 434 385 5775</a></p>
+    </div>
+    <div>
+        <p>📩 &#160&#160 <a href="julie@jcrew.com">Email Us</a></p>
+    </div>
+</div>
+
+
+
+<!-- Footer Part Starts from here -->
+<br>
+    <div id="footer">
+        <div id="footer2">
+            <div id="footer1">
+                <div>
+                    <h4>Help</h4>
+                    <p><a href="">Customer Services</a></p>
+                    <p><a href="">Track Order</a></p>
+                    <p><a href="">Return & Exchange</a></p>
+                    <p><a href="">Shipping</a></p>
+                    <p><a href="">International</a></p>
+                    <p><a href="">Orders</a></p>
+                    <p><a href="">Contact Us</a></p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <p><a href="https://stores.jcrew.com/search">Find a Store</a></p>
+                    <p><a href="https://www.jcrew.com/in/r/size-charts">Size charts</a></p>
+                    <p><a href="https://www.jcrew.com/in/share">Refer a friend</a></p>
+                    <p><a href="https://www.jcrew.com/in/best-deals">Offers & Promotions</a></p>
+                    <p><a href="https://www.jcrew.com/in/favorites">My Favourites</a></p>
+                </div>
+                <div>
+                    <h4>About clientage</h4>
+                    <p><a href="https://www.jcrew.com/in/s/aboutus">Our Story</a></p>
+                    <p><a href="https://jobs.jcrew.com/">Careers</a></p>
+                    <p><a href="https://www.jcrew.com/in/s/corporate-responsibility">Social Responsibility</a></p>
+                    <p><a href="https://www.jcrew.com/in/s/CSR-california-transparency-act">California Transparency</p>
+                    <p>Act/Modern Slavery Act</a></p>
+                    <p><a href="https://investors.jcrew.com/investor-relations/?ver=jc">Investors Relations</a></p>
+                    <p><a href="https://www.jcrew.com/in/help/terms-of-use">Terms of Use</a></p>
+                    <p><a href="https://www.jcrew.com/in/help/privacy-policy">Privacy Policy</a></p>
+                    <p><a href="https://jcrew.clarip.com/dsr/create?brand=jcrew&type=3">California Do Not Sell My</p>
+                    <p>Personal Information</a></p> 
+                    <p><a href="https://www.jcrew.com/in/s/diversity-equity-inclusion">Diversity, Equity and Inclusion</p>
+                    <p>at clientage</a></p>
+                </div>
+            </div>
+            <div id="footer3">
+                <div>
+                <h4>Like Being First?</h4>
+                <p>Get can't miss style news, before everybody else.</p>
+                <input type="email" placeholder="Enter your email."> <button>SIGN UP</button>
+                </div>
+            </div>
+        </div>
+        <div id="footer4">
+            <a href="https://twitter.com/?lang=en-in">👻</a>&nbsp&nbsp&nbsp&#160&#160<a href="https://in.pinterest.com/">🎯</a>&nbsp&nbsp&nbsp&#160&#160<a href="https://www.youtube.com/?yt=">📺</a>
+            <P><a href="https://en.wikipedia.org/wiki/India">India 🏳‍🌈</a></P>
+            <p>© 2022</p>
+            <img src="" alt="">
+        </div>
+    </div>
+
+    
 </body>
 <script src="shopping.js"></script>
 </html>

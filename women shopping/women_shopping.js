@@ -15,10 +15,13 @@ promise.then((responseObject)=>{
 function women(data){
     data.forEach(element => {
         let box = document.createElement('div');
+
         let img = document.createElement('img');
         img.setAttribute('src',element.avatar);
+
         let description = document.createElement('p');
         description.innerText = element.descriptions;
+        
         let price = document.createElement('p');
         price.textContent = 'INR'+"-" + element.price;
 
