@@ -1,4 +1,4 @@
-let container = document.getElementById('women_shopping_container')
+let container = document.getElementById('shopping_container')
 
 let promise = fetch('https://6399dcd016b0fdad774c0884.mockapi.io/products?page=1&limit=10')
 promise.then((responseObject)=>{
@@ -6,15 +6,16 @@ promise.then((responseObject)=>{
 })
 .then((actualdata)=>{
     console.log(actualdata);
-    women(actualdata)
+    shopping(actualdata)
 })
 .catch((error)=>{
     console.log(error);
 })
 
-function women(data){
+function shopping(data){
     data.forEach(element => {
         let box = document.createElement('div');
+        box.setAttribute('id',"box")
 
         let img = document.createElement('img');
         img.setAttribute('src',element.avatar);
@@ -23,9 +24,29 @@ function women(data){
         description.innerText = element.descriptions;
         
         let price = document.createElement('p');
-        price.textContent = 'INR'+"-" + element.price;
+        price.setAttribute('id','price')
+        price.textContent = 'INR'+"-" + element.price +'--'+ 'INR - 22,234';
 
-        box.append(img,description,price)
+        
+        let heart = document.createElement('button');
+        heart.setAttribute('id','heart');
+        heart.innerText = '❤';
+        heart.addEventListener('click',()=>{
+            let favourite = JSON.parse(localStorage.getItem('favourite'))||[];
+            favourite.push(element);
+            localStorage.setItem('favourite',JSON.stringify(favourite));
+        })
+
+        let cart = document.createElement('button');
+        cart.setAttribute('id','cart');
+        cart.innerText = '🛒';
+        cart.addEventListener('click',()=>{
+            let cart = JSON.parse(localStorage.getItem('cart'))||[];
+            cart.push(element);
+            localStorage.setItem('cart',JSON.stringify(cart));
+        })
+
+        box.append(img,description,price,heart,cart)
         container.append(box);
         box.addEventListener('click',()=>{
             console.log(element.price)

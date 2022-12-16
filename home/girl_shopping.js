@@ -37,6 +37,10 @@ function shopping(data){
             localStorage.setItem('favourite',JSON.stringify(favourite));
         })
 
+        let a  = document.createElement('a');
+        a.setAttribute('href','./checkout.html')
+
+
         let cart = document.createElement('button');
         cart.setAttribute('id','cart');
         cart.innerText = '🛒';
@@ -46,7 +50,8 @@ function shopping(data){
             localStorage.setItem('cart',JSON.stringify(cart));
         })
 
-        box.append(img,description,price,heart,cart)
+        a.append(img)
+        box.append(a,description,price,heart,cart)
         container.append(box);
         box.addEventListener('click',()=>{
             console.log(element.price)

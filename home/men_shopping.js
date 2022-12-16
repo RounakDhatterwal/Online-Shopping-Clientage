@@ -1,6 +1,6 @@
 let container = document.getElementById('shopping_container')
 
-let promise = fetch('https://6399dcd016b0fdad774c0884.mockapi.io/products?page=3&limit=10')
+let promise = fetch('https://6399dcd016b0fdad774c0884.mockapi.io/products?page=2&limit=10')
 promise.then((responseObject)=>{
     return responseObject.json();
 })
@@ -37,6 +37,9 @@ function shopping(data){
             localStorage.setItem('favourite',JSON.stringify(favourite));
         })
 
+        let a  = document.createElement('a');
+        a.setAttribute('href','./checkout.html')
+
         let cart = document.createElement('button');
         cart.setAttribute('id','cart');
         cart.innerText = '🛒';
@@ -46,7 +49,8 @@ function shopping(data){
             localStorage.setItem('cart',JSON.stringify(cart));
         })
 
-        box.append(img,description,price,heart,cart)
+        a.append(img)
+        box.append(a,description,price,heart,cart)
         container.append(box);
         box.addEventListener('click',()=>{
             console.log(element.price)

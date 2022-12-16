@@ -26,9 +26,16 @@
     display: flex;
     justify-content: space-between;
 }
-#filter,#featured{
+#featured{
     width: 180px;
-    height: 30px;
+    height: 40px;
+    font-size: 16px;
+}
+
+#filter{
+    width: 320px;
+    height: 40px;
+    font-size: 20px;
 }
 
 #second_nav>div:nth-child(2){
@@ -130,7 +137,6 @@ font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
 }
-
 
 
 

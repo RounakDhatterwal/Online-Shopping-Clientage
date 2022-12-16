@@ -4,33 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Bag</title>
+    <title>product</title>
     <link rel = "icon" href = "https://live.staticflickr.com/65535/52563473413_acddb191f5_w.jpg" 
         type = "image/x-icon">
-    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="product.css">
 </head>
 <body>
-    <p style="text-align: center;font-family: Arial, Helvetica, sans-serif;font-size: 14px;">Have a question? We can help. <u>*</u></p>
-    <div id="first_div"><b>Unfortunately, your order will not arrive by 12/24.</b></div>
-    
-    
-    <div>
-        <div id="bag">
-            <div id="second_div"> <p><b>SHOPPING BAG(<span>0</span>)</b></p> <p>Have an account? <span>Sign in</span></p></div>
-            <div id="shopping_bag"> <p>Your Shopping Bag is empty.</p></div>
-        </div>    
-        <div id="saved">
-            <div id="second_div"> <p id="a"><b>FAVOURITE(<span>0</span>)</b></p> </div>
-            <div id="favourite_items"> 
-                <p>Your Favourite is empty.</p>
+    <div style="text-align: center;">
+        <a style="cursor: pointer;" href="./home.html"><img style="height: 200px;" src="https://live.staticflickr.com/65535/52562910881_e1a6dc6c2c_n.jpg" alt=""></a>
+    </div>
+    <p style="text-align: center;">Have a question? We can help. <u>*</u></p><br>
 
-            </div>
+    <div id="top_image" style="display: grid;grid-template-columns: repeat(8,1fr);">
+        <div>
+            <img src="https://www.jcrew.com/s7-img-facade/BM302_BR6699?wid=326">
+        </div>
+        <div>
+            <img src="https://www.jcrew.com/s7-img-facade/BF013_BK0001?wid=326">
+        </div>
+        <div>
+            <img src="https://www.jcrew.com/s7-img-facade/BK216_RD6052?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480">
+        </div>
+        <div>
+            <img src="https://www.jcrew.com/s7-img-facade/BP934_EE4372?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480">
+        </div>
+        <div>
+            <img src="https://www.jcrew.com/s7-img-facade/BM154_SR0892?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480">
+        </div>
+        <div>
+            <img src="https://www.jcrew.com/s7-img-facade/BM139_GP0252?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480">
+        </div>
+        <div>
+            <img src="https://www.jcrew.com/s7-img-facade/BJ322_YD0136?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480">
+        </div>
+        <div>
+            <img src="https://www.jcrew.com/s7-img-facade/BM658_KF5332?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480">
         </div>
     </div>
 
+    <div id="view">
+        <div id='image'>
+        </div>
+        <div>
+            <div>
+            <p>ONLY A FEW LEFT</p>
+            <P id="title"></P>
+            <p id="price"></p>
+            <p>prices include duties and taxes</p>
+            <button id="button"></button>
+            <button>❤</button></div>
+            <div>
+                <ul>Size & Fit</ul>
+                <li>XXS (2-3); XS (4-5); S (6-7); M (8-9); L (10-11); XL (12-14); XXL (15-16).</li>
+            </div>
+            <div>
+                <p>Product Details</p>
+                <ul>A mini version of Dad's most classic fall sweater - in three timeless colors. This cotton cable knit is perfect for year-round wear, with shorts and sneakers now, and layered with a button-down shirt and jeans as it gets chillier.</ul>
+                <li>100% cotton.</li>
+                <li>Machine wash.</li>
+                <li>Import.</li>
+                <li>Item AZ762.</li>
+            </div>
+            <div>
+                <p>Our Fabrics, Re-imagined</p>
+                <img src="https://live.staticflickr.com/65535/52567459850_6f86da281b_w.jpg" alt="">
+            </div>
+            <p>Learn more  Shop All Re-imagined </p>
+        </div>
+    </div>
 
-
-    <!-- Instagram Handle -->
+    <p>There are no reviews for this product. Be the first to comment. Write a Review</p>
+<!-- Instagram Handle -->
 
 <div id="last_second">
     <div>
@@ -101,7 +145,7 @@
         </div>
     </div>
 
-
-<script src="cart.js"></script>
+    
 </body>
+<script src="product.js"></script>
 </html>

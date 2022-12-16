@@ -1,6 +1,6 @@
 let container = document.getElementById('shopping_container')
 
-let promise = fetch('https://6399dcd016b0fdad774c0884.mockapi.io/products?page=2&limit=10')
+let promise = fetch('https://6399dcd016b0fdad774c0884.mockapi.io/products?page=4&limit=10')
 promise.then((responseObject)=>{
     return responseObject.json();
 })
