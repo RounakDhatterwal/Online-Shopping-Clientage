@@ -6,6 +6,13 @@ let favourite = JSON.parse(localStorage.getItem('favourite'))||[];
 bag(cart)
 console.log(true)
 
+
+let cart_total = document.getElementById('cart_total');
+cart_total.innerText = cart.length;
+let fav_total = document.getElementById('fav_total');
+fav_total.textContent = favourite.length;
+
+
 function bag(data){
     shopping_bag.innerHTML = null
     data.forEach((element,index) => {
@@ -65,12 +72,12 @@ function bag(data){
             localStorage.setItem('cart',JSON.stringify(cart))
             bag(cart)
         })
-        div.addEventListener('click',()=>{
-            let checkout = JSON.parse(localStorage.getItem('checkout'))||[]
-            checkout.push(element);
-            localStorage.setItem('checkout',JSON.stringify(checkout))
-            console.log(true)
-        })
+        // div.addEventListener('click',()=>{
+        //     let checkout = JSON.parse(localStorage.getItem('checkout'))||[]
+        //     checkout.push(element);
+        //     localStorage.setItem('checkout',JSON.stringify(checkout))
+        //     console.log(true)
+        // })
         
 
         divb.append(h31,p,pa,pb,remove,favourite)
@@ -131,8 +138,11 @@ function fav(data){
             cart.push(element);
             localStorage.setItem('cart',JSON.stringify(cart));
             bag()
+
         })
 
+        let a  = document.createElement('a');
+        a.setAttribute('href','./checkout.html')
         
 
         let div3 = document.createElement('div');
@@ -151,7 +161,8 @@ function fav(data){
         
 
         divb.append(h31,p,pa,pb,remove,cart)
-        diva.append(image);
+        a.append(image)
+        diva.append(a);
         div3.append(h3)
         div2.append(diva,divb)
         div1.append(div2,div3)
