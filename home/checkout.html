@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    
+    <style>
+#product_display{
+    padding: 10px;
+}
+
+
+
+
+/* Last Second */
+#last_second{
+    display: flex;
+    width: 40%;
+    margin: auto;
+    justify-content:space-evenly;
+}
+
+
+
+/* footer */
+#footer1,#footer2{
+    display: flex;
+    line-height: 10px;
+
+}
+#footer1,#footer3{
+    justify-content: space-evenly;
+    width: 50%;
+}
+#footer3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    padding-top: 8%;
+}
+#footer3>div{
+    text-align: center;
+}
+#footer3>div>h4,#footer3>div>p{
+    text-align: center;
+}
+#footer3 p{
+    color: rgb(101, 96, 96);
+}
+#footer3 button{
+background-color: black;
+color: white;
+font-weight: 600;
+padding: 10px 15px;
+}
+#footer3 input{
+    padding: 10px 50px;
+    font-size: 14px;
+    border-color: rgb(246, 241, 241);
+}
+#footer2{
+    justify-content: space-between;
+}
+#footer>div:nth-child(2){
+    width: 80%;
+    padding: 40px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+#footer h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+#footer{
+    background-color: rgb(245, 244, 243);
+}
+#aa{
+    font-size: 60px;text-align: center;
+}
+#bb{
+font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 700;
+text-align: center;
+}
+#aabb{
+    line-height:0cm;
+}
+#bo1{
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+}
+#bo1>div:nth-child(2){
+    width: 40%;
+}
+#bo1>div:nth-child(1){
+    width: 60%;
+    /* border: 1px solid red; */
+    padding: 15px;
+    padding-top: 5px;
+}
+#bo1>div:nth-child(1)>div:nth-child(1)>div{
+    display: flex;
+    /* border: 1px solid blue; */
+    justify-content: space-between;
+    padding: 10px;
+    line-height: 0cm;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+#aaa{
+    font-weight: 400;
+    font-size: 13px;
+}
+#bbbb{
+    line-height: 5px;
+}
+#fff{
+    /* border: 1px solid red; */
+    padding: 15px;
+    line-height: 10px;
+}
+#fff input{
+    width: 200px;
+    height: 40px;
+}
+
+
+    </style>
+<!-- ***************************************************************************************************** -->
+</head>
+<body>
+
+    <div style="text-align: center;">
+        <a style="cursor: pointer;" href="./index.html"><img style="height: 200px;" src="https://live.staticflickr.com/65535/52562910881_e1a6dc6c2c_n.jpg" alt=""></a>
+    </div>
+<div id="aabb">
+    <p id="aa">clientage </p>
+    <p id="bb">CHECKOUT</p>
+</div>
+<hr style="color: rgb(238, 231, 231);">
+
+
+<div id="bo1">
+    <div >
+        <div style="border:1px solid rgb(213, 205, 205); padding-left: 5px;">
+            <h3 style="font-size: 20px;">Delivery Method</h3>
+            <div>
+            <div>
+            <p><label class="container">
+                <input type="checkbox">
+                <span class="checkmark"></span>STANDARD Delivery
+                <p id="aaa">&#160&#160&#160&#160&#160&#160 Delieverd on or before 9 January</p>
+            </label></p> 
+            <p><label class="container">
+                <input type="checkbox">
+                <span class="checkmark"></span>EXPRESS Delivery
+                <p id="aaa">&#160&#160&#160&#160&#160&#160 Delieverd on or before 30 December</p>
+            </label></p> 
+            </div>
+            <div id="bbbb">
+                <p>INR 1,710.00</p><br><br><br><br>
+                <p>INR 2,502.00</p>
+            </div>
+            </div>
+        </div>
+        <br>
+        <div style="border:1px solid rgb(213, 205, 205); padding-left: 5px;">
+            <h3 style="font-size: 20px;">Delivery Address</h3>
+            <div id="fff">
+            <div><input type="text" id="firstname" placeholder="*First Name">&#160&#160&#160 <br><br><input type="text" id="lastname"  placeholder="*Last Name"></div>
+            <br><div id="q" ><input style="width: 97%;" type="text" id="country"  placeholder="*Country  India"></div>
+            <br><div id="q" ><input style="width: 97%;" type="text" id="address1"  placeholder="*Address Line 1"></div>
+            <p>Start typing a street address</p>
+            <input type="text"  style="width: 97%;" id="q"  id="address2"  placeholder="Address Line 2"><br>
+            <br><input type="number"  id="postalcode" placeholder="*Postal Code"> <br><br><input type="text" id="city"  placeholder="*City">
+            <div><p><label class="container">
+                <input type="checkbox" style="width: 20px;height: 20px;">
+                <span class="checkmark"></span><b>Save this address for my next purchase.</b>
+            </label></p> </div>
+            <br><br>
+            <input type="number" id="number"  style="width: 97%;" placeholder="22132 43483"><br><br>
+            <input type="email" id="email"  style="width: 97%;" placeholder="*Email Address">
+            <p style="font-size: 15px;">🍃 <b>Your order is 100% Carbon Neutral</b></p>
+            <p style="font-size:13px;"><b>Powered by <span style="font-size: 20px;">esw</b></span>❓</p>
+            <p style="font-size: 13px;font-family:Arial, Helvetica, sans-serif ;line-height: 15px;"><label class="container">
+                <input type="checkbox"  style="width: 20px;height: 20px; ">
+                <span class="checkmark"></span><b>&#160&#160&#160&#160&#160&#160I have read and consent to ESW processing my <br>&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160 information in accordance with the Privacy Statement<br>&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160 and Cookie Policy.</b>
+            </label></p>
+            <button id="purchase" style="width: 100%;height: 40px;font-size: 25px;background-color: blue;color: white;">PURCHASE</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="product_display"  style="border:1px solid rgb(213, 205, 205); padding-left: 5px;height: 400px;">
+
+        <a href="./cart.html"><button style="width: 100%;height:38px;background-color: black;color: white;">Back to Cart</button></a>
+        <br>
+        <br>
+        <img style="width: 90%;" src="https://www.jcrew.com/s7-img-facade/BM302_RD6052?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&wid=408&hei=408" alt="">
+        <p style="font-family: Arial, Helvetica, sans-serif;font-weight: 600;">TOTAL&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160 INR 19,251.00</p>
+    </div>
+</div>
+
+
+
+
+
+    
+    <!-- Instagram Handle -->
+
+<div id="last_second">
+    <div>
+       <p>👻 &#160&#160 <a href="https://twitter.com/jcrew_help">@clientage_help</a></p>
+    </div>
+    <div>
+        <p>📞&#160&#160 <a href="tel:1 434 385 5775">1 434 385 5775</a></p>
+    </div>
+    <div>
+        <p>📩 &#160&#160 <a href="julie@jcrew.com">Email Us</a></p>
+    </div>
+</div>
+
+
+
+<!-- Footer Part Starts from here -->
+<br>
+    <div id="footer">
+        <div id="footer2">
+            <div id="footer1">
+                <div>
+                    <h4>Help</h4>
+                    <p><a href="">Customer Services</a></p>
+                    <p><a href="">Track Order</a></p>
+                    <p><a href="">Return & Exchange</a></p>
+                    <p><a href="">Shipping</a></p>
+                    <p><a href="">International</a></p>
+                    <p><a href="">Orders</a></p>
+                    <p><a href="">Contact Us</a></p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <p><a href="https://stores.jcrew.com/search">Find a Store</a></p>
+                    <p><a href="https://www.jcrew.com/in/r/size-charts">Size charts</a></p>
+                    <p><a href="https://www.jcrew.com/in/share">Refer a friend</a></p>
+                    <p><a href="https://www.jcrew.com/in/best-deals">Offers & Promotions</a></p>
+                    <p><a href="https://www.jcrew.com/in/favorites">My Favourites</a></p>
+                </div>
+                <div>
+                    <h4>About clientage</h4>
+                    <p><a href="https://www.jcrew.com/in/s/aboutus">Our Story</a></p>
+                    <p><a href="https://jobs.jcrew.com/">Careers</a></p>
+                    <p><a href="https://www.jcrew.com/in/s/corporate-responsibility">Social Responsibility</a></p>
+                    <p><a href="https://www.jcrew.com/in/s/CSR-california-transparency-act">California Transparency</p>
+                    <p>Act/Modern Slavery Act</a></p>
+                    <p><a href="https://investors.jcrew.com/investor-relations/?ver=jc">Investors Relations</a></p>
+                    <p><a href="https://www.jcrew.com/in/help/terms-of-use">Terms of Use</a></p>
+                    <p><a href="https://www.jcrew.com/in/help/privacy-policy">Privacy Policy</a></p>
+                    <p><a href="https://jcrew.clarip.com/dsr/create?brand=jcrew&type=3">California Do Not Sell My</p>
+                    <p>Personal Information</a></p> 
+                    <p><a href="https://www.jcrew.com/in/s/diversity-equity-inclusion">Diversity, Equity and Inclusion</p>
+                    <p>at clientage</a></p>
+                </div>
+            </div>
+            <div id="footer3">
+                <div>
+                <h4>Like Being First?</h4>
+                <p>Get can't miss style news, before everybody else.</p>
+                <input type="email" placeholder="Enter your email."> <button>SIGN UP</button>
+                </div>
+            </div>
+        </div>
+        <div id="footer4">
+            <a href="https://twitter.com/?lang=en-in">👻</a>&nbsp&nbsp&nbsp&#160&#160<a href="https://in.pinterest.com/">🎯</a>&nbsp&nbsp&nbsp&#160&#160<a href="https://www.youtube.com/?yt=">📺</a>
+            <P><a href="https://en.wikipedia.org/wiki/India">India 🏳‍🌈</a></P>
+            <p>© 2022</p>
+            <img src="" alt="">
+        </div>
+    </div>
+
+</body>
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
+<script>
+
+
+    // let firstname = document.getElementById('firstname').value
+    // let lastname = document.getElementById('lastname').value
+    // let country = document.getElementById('country').value
+    // let address1 = document.getElementById('address1').value
+    // let address2 = document.getElementById('address2').value
+    // let postalcode = document.getElementById('postalcode').value
+    // let number = document.getElementById('number').value
+    // let email = document.getElementById('email').value
+
+
+    // let details ={
+    //     name : firstname + lastname,
+    //     email : email,
+    //     number : number,
+    //     address1 : address1,
+    //     address2 : address2,
+    //     postalcode : postalcode,
+    //     country : country,
+    // }
+    // localStorage.setItem('details',JSON.stringify(details))
+    // console.log(true)
+
+
+
+    let product_display = document.getElementById('product_display');
+    let Checkout = JSON.parse(localStorage.getItem('checkout'))||[];
+    let purchase = document.getElementById('purchase');
+purchase.addEventListener('click',()=>{
+    alert('Order Placed via Cash on Delivery')
+})
+
+
+    checkOut(Checkout)
+
+    function checkOut(data){
+
+        data.forEach(element => {
+            let descriptions = document.createElement('h4');
+            descriptions.textContent = element.descriptions
+            let image = document.createElement('img');
+            image.setAttribute('src',element.avatar);
+            let h5 = document.createElement('h5');
+            h5.textContent = 'Total' +"-"+element.price;
+        });
+
+    }
+
+
+    let button = document.getElementById('purchase')
+    button.addEventListener('click',()=>{
+        alert('product placed succesfully')
+    })
+
+
+</script>
+</html>
