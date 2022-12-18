@@ -83,6 +83,20 @@ a:hover{
     width: 80%;
     margin: auto;
 }
+#view{
+    padding-top: 20px;
+}
+#view>div{
+    padding-top: 40px;
+}
 #view>div:nth-child(2){
-    padding: 20px 50px;
+    padding: 20px 60px;
+}
+
+#button{
+    width: 60px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
 }

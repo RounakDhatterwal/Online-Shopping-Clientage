@@ -7,7 +7,7 @@
     <title>clientage</title>
      <link rel = "icon" href = "https://live.staticflickr.com/65535/52563473413_acddb191f5_w.jpg" 
         type = "image/x-icon">
-    <link rel="stylesheet" href="home.css"> 
+    <link rel="stylesheet" href="index.css"> 
 </head>
 <body>
 
@@ -15,7 +15,7 @@
     <!-- <div    id="nav"> -->
         <div id="nav1">
             <div>
-                <a style="cursor: pointer;" href="./home.html"><img style="height: 70px;" src="https://live.staticflickr.com/65535/52563449063_3f9b008f91_w.jpg" alt=""></a>
+                <a style="cursor: pointer;" href="./index.html"><img style="height: 70px;" src="https://live.staticflickr.com/65535/52563449063_3f9b008f91_w.jpg" alt=""></a>
             </div>
             <div>&#160&#160
             <div class="dropdown">
@@ -140,7 +140,8 @@
               </div>
             </div>
             <div style="padding-top: 20px;"><input style="width: 180px;height: 30px;padding-left: 3px;" id="search_bar" type="text" placeholder="Search clientage"></div>
-            <div style="padding-top: 20px;"> <button style="width: 100px;height: 35px;">Sign In</button></div>
+            <div style="padding-top: 20px;"> <a href="./signin.html"><button id="signin" style="width: 100px;height: 35px;">Sign In</button></a></div>
+            
             <div style="padding-top: 20px;"><a style="cursor: pointer; text-decoration: none;" href="./cart.html"><span>🛒</span></a></div>
         
         </div>
@@ -154,6 +155,7 @@
     
 
     <p style="text-align: center;">Have a question? We can help. <u>*</u></p>
+    <h2>Welcome:<script>document.write(localStorage.getItem("name"))</script></h2>
     <div id="first_background_image"></div>
 
 
@@ -468,5 +470,5 @@
         </div>
     </div>
 </body>
-<script href="home.js"></script>
+<script href="index.js"></script>
 </html>

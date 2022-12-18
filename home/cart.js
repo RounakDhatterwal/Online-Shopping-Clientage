@@ -4,16 +4,10 @@ let favourite_items = document.getElementById('favourite_items');
 let cart = JSON.parse(localStorage.getItem('cart'))||[]
 let favourite = JSON.parse(localStorage.getItem('favourite'))||[];
 bag(cart)
-console.log(true)
-
-
-let cart_total = document.getElementById('cart_total');
-cart_total.innerText = cart.length;
-let fav_total = document.getElementById('fav_total');
-fav_total.textContent = favourite.length;
-
 
 function bag(data){
+    let cart_total = document.getElementById('cart_total');
+cart_total.innerText = data.length;
     shopping_bag.innerHTML = null
     data.forEach((element,index) => {
 
@@ -43,18 +37,25 @@ function bag(data){
         let remove = document.createElement('button');
         remove.innerText = 'remove';
         remove.addEventListener('click',()=>{
-            let cart = JSON.parse(localStorage.getItem('cart'))
-            splice(index,1);
-            localStorage.setItem('cart',JSON.stringify(cart))
-            bag(cart)
+            // let cart = JSON.parse(localStorage.getItem('cart'))||[]
+            data.splice(index,1);
+            localStorage.setItem('cart',JSON.stringify(data))
+            bag(data);
+            
+            
         })
         let favourite = document.createElement('button');
         favourite.innerText = 'favourite'
         favourite.addEventListener('click',()=>{
             let favourite = JSON.parse(localStorage.getItem('favourite'))||[];
             favourite.push(element);
+            data.splice(index,1);
+            localStorage.setItem('cart',JSON.stringify(data))
             localStorage.setItem('favourite',JSON.stringify(favourite));
-            fav()
+            fav(favourite);
+            bag(data)
+            
+            
         })
 
         
@@ -98,6 +99,9 @@ fav(favourite)
 
 
 function fav(data){
+    let fav_total = document.getElementById('fav_total');
+    fav_total.textContent = data.length;
+    favourite_items.innerHTML = null
     data.forEach((element,index) => {
 
         let div = document.createElement('div');
@@ -126,23 +130,27 @@ function fav(data){
         let remove = document.createElement('button');
         remove.innerText = 'remove';
         remove.addEventListener('click',()=>{
-            let cart = JSON.parse(localStorage.getItem('cart'))
-            splice(index,1);
-            localStorage.setItem('cart',JSON.stringify(cart))
-            bag(cart)
+            
+            data.splice(index,1);
+            localStorage.setItem('favourite',JSON.stringify(data))
+            fav(data)
         })
         let cart = document.createElement('button');
         cart.innerText = 'cart'
         cart.addEventListener('click',()=>{
             let cart = JSON.parse(localStorage.getItem('cart'))||[];
             cart.push(element);
-            localStorage.setItem('cart',JSON.stringify(cart));
-            bag()
-
+            favourite.splice(index,1)
+            localStorage.setItem("favourite",JSON.stringify(favourite))
+            localStorage.setItem('cart',JSON.stringify(data));
+            bag(cart);
+            fav(favourite)
+           
+           
         })
 
         let a  = document.createElement('a');
-        a.setAttribute('href','./checkout.html')
+        a.setAttribute('href','./product.html')
         
 
         let div3 = document.createElement('div');
@@ -152,11 +160,11 @@ function fav(data){
         div1.addEventListener('click',()=>{
             let buy = JSON.parse(localStorage.getItem('buy'))||[];
             buy.push(element);
-            localStorage.setItem('buy',JSON.stringify(buy));
-            splice(index,1);
+            localStorage.setItem('buy',JSON.stringify(data));
+            cart.splice(index,1);
             cart.push(element)
-            localStorage.setItem('cart',JSON.stringify(cart))
-            bag(cart)
+            localStorage.setItem('cart',JSON.stringify(data))
+            bag()
         })
         
 
@@ -170,3 +178,5 @@ function fav(data){
         favourite_items.append(div,div1)
     });
 }
+
+

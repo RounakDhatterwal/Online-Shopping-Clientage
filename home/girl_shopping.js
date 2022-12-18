@@ -38,7 +38,7 @@ function shopping(data){
         })
 
         let a  = document.createElement('a');
-        a.setAttribute('href','./checkout.html')
+        a.setAttribute('href','./product.html')
 
 
         let cart = document.createElement('button');
